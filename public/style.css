@@ -8,8 +8,10 @@
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  align-content: space-between;
 }
 
 .drop-area {
@@ -30,3 +32,25 @@
 .drag-enter {
   transform: scale(1.05);
 }
+
+.thumnails-area {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 800px;
+  flex: 0.5;
+  margin: 1em;
+  border-radius: 20px;
+}
+
+.thumbnail-box {
+  width: 100px;
+  height: 100px;
+  margin: 0 0.5em;
+}
+
+.thumbnail-box img {
+  height: 50%;
+}
+
+.thumbnail-box p {}

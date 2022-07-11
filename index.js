@@ -10,10 +10,12 @@ router.use(bodyParser);
 router.get('/public', serveFile);
 
 router.post('/upload', (req, res) => {
-  const [file] = req.body.files;
-  fs.writeFile(`./uploadFiles/test-${file.filename}`, file.buffer, (err) => {
-    res.send('uploaded');
+  const { files } = req.body;
+  console.log(files);
+  files.forEach(file => {
+    fs.writeFile(`./uploadFiles/test-${file.filename}`, file.buffer, (err) => { });
   });
+  res.send('uploaded');
 });
 
 const PORT = 3000;
