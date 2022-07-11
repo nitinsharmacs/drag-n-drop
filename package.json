@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "myserver": "github:nitinsharmacs/myserver",
+    "myserver-bodyparser": "github:nitinsharmacs/myserver-bodyparser"
+  },
+  "scripts": {
+    "start": "node ."
+  }
+}
